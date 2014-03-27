@@ -1,1 +1,216 @@
-Hello World
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>兩岸服務貿易協議 公聽會逐字稿</title>
+
+    <style type="text/css">
+table { 
+  border: 0; 
+  font-family: arial; 
+  font-size:14px; 
+} 
+th { 
+  background-color:yellow; 
+} 
+td { 
+  border-bottom:1 solid #000000;
+  border-left:7 solid #ffffff;
+}
+
+tr.content td { 
+  cursor: pointer;
+}
+
+tr.content:hover {
+    background: #646464;
+    color: white;
+}
+
+    </style>
+    <script src="./jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+    
+        jQuery(function() {
+
+            function genRow(data) {
+                return jQuery("<tr class='content'></tr>")
+                    .append(jQuery("<td>"+data.time+"</td>"))
+                    .append(jQuery("<td>"+data.name+"</td>"))
+                    .append(jQuery("<td>"+data.classes+"</td>"))
+                    .append(jQuery("<td><a href='"+data.href+"'>link</a></td>"));
+            }
+            
+            var data = [
+                {
+                    time: "2013/07/31",
+                    name: "「海峽兩岸服務貿易協議」第一場公聽會逐字稿",
+                    href: "./102_07_31_01.doc",
+                    classes: "貿易協定,市場管理,就業輔導,大陸政策"
+                },
+
+                {
+                    time: "2013/07/31",
+                    name: "「海峽兩岸服務貿易協議」第二場公聽會逐字稿",
+                    href: "./102_07_31_02.doc",
+                    classes: "貿易協定,市場管理,就業輔導,大陸政策"
+                },
+
+                {
+                    time: "2013/08/01",
+                    name: "「海峽兩岸服務貿易協議」第三場公聽會逐字稿",
+                    href: "./102_08_01_03.doc",
+                    classes: "貿易協定,市場管理,就業輔導,大陸政策"
+                },
+
+                {
+                    time: "2013/08/01",
+                    name: "「海峽兩岸服務貿易協議」第四場公聽會逐字稿",
+                    href: "./102_08_01_04.doc",
+                    classes: "貿易協定,市場管理,就業輔導,大陸政策"
+                },
+
+                {
+                    time: "2013/09/30",
+                    name: "「海峽兩岸服務貿易協議」第一場公聽會逐字稿",
+                    href: "./102_09_30_01.doc",
+                    classes: "貿易協定,運輸業,海運業"
+                },
+
+                {
+                    time: "2013/09/30",
+                    name: "「海峽兩岸服務貿易協議」第二場公聽會逐字稿",
+                    href: "./102_09_30_02.doc",
+                    classes: "貿易協定,運輸業,海運業"
+                },
+
+                {
+                    time: "2013/10/02",
+                    name: "「海峽兩岸服務貿易協議」第三場公聽會逐字稿",
+                    href: "./102_10_02_03.doc",
+                    classes: "貿易協定,大陸政策,智慧財產權,醫療,文化,運動場,通訊"
+                },
+
+                {
+                    time: "2013/10/02",
+                    name: "「海峽兩岸服務貿易協議」第四場公聽會逐字稿",
+                    href: "./102_10_02_04.doc",
+                    classes: "貿易協定,大陸政策,智慧財產權,醫療,文化,運動場,通訊"
+                },
+
+                {
+                    time: "2013/10/03",
+                    name: "「海峽兩岸服務貿易協議」第五場公聽會逐字稿",
+                    href: "./102_10_03_05.doc",
+                    classes: "貿易協定,金融機構,外國銀行,證券,期貨"
+                },
+
+                {
+                    time: "2013/10/03",
+                    name: "「海峽兩岸服務貿易協議」第六場公聽會逐字稿",
+                    href: "./102_10_03_06.doc",
+                    classes: "貿易協定,金融機構,外國銀行,證券,期貨"
+                },
+
+                {
+                    time: "2013/10/07",
+                    name: "「海峽兩岸服務貿易協議」第七場公聽會逐字稿",
+                    href: "./102_10_07_07.doc",
+                    classes: "旅遊業,空運,航運,貿易協定"
+                },
+
+                {
+                    time: "2013/10/07",
+                    name: "「海峽兩岸服務貿易協議」第八場公聽會逐字稿",
+                    href: "./102_10_07_08.doc",
+                    classes: "旅遊業,空運,航運,貿易協定"
+                },
+
+                {
+                    time: "2013/10/24",
+                    name: "「海峽兩岸服務貿易協議」第九場公聽會逐字稿",
+                    href: "./102_10_24_09.doc",
+                    classes: "翻譯,理容業,管理顧問"
+                },
+
+                {
+                    time: "2013/11/07",
+                    name: "「海峽兩岸服務貿易協議」第十場公聽會逐字稿",
+                    href: "./102_11_07_10.doc",
+                    classes: "資訊工業, 租賃業 , 航空器"
+                },
+
+                {
+                    time: "2013/11/21",
+                    name: "「海峽兩岸服務貿易協議」第十一場公聽會逐字稿",
+                    href: "./102_11_21_11.doc",
+                    classes: "畜牧業,營建業,保險,殯儀館"
+                },
+
+                {
+                    time: "2013/12/05",
+                    name: "「海峽兩岸服務貿易協議」第十二場公聽會逐字稿",
+                    href: "./102_12_05_12.doc",
+                    classes: "批發業,零售業,經銷權,糧食供應"
+                },
+
+                {
+                    time: "2013/12/19",
+                    name: "「海峽兩岸服務貿易協議」第十三場公聽會逐字稿",
+                    href: "./102_12_19_13.doc",
+                    classes: "廣告業,市場研究,複製服務,郵寄名單編輯"
+                },
+
+                {
+                    time: "2014/01/02",
+                    name: "「海峽兩岸服務貿易協議」第十四場公聽會逐字稿",
+                    href: "./103_01_02_14.doc",
+                    classes: "攝影業,包裝服務,印刷相關服務,展覽會"
+                },
+
+                {
+                    time: "2014/01/13",
+                    name: "「海峽兩岸服務貿易協議」第十五場公聽會逐字稿",
+                    href: "./103_01_13_15.doc",
+                    classes: "技術檢測與分析,建築物清理,環境服務"
+                }                                
+            ];
+
+
+            var $table = jQuery("table");
+            for(var i = 0; i < data.length; i++) {                
+                $table.append(genRow(data[i]));
+            }
+
+            jQuery("td").click(function() {
+                location = jQuery(this).closest("tr").find("a").attr("href");
+            });
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                時間
+            </td>
+
+            <td>
+                場次
+            </td>
+
+            <td>
+                主題
+            </td>
+
+            <td>
+                逐字稿下載連結
+            </td>
+        </tr>
+
+        
+    </table>
+</body>
+</html>
